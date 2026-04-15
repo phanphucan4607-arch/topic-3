@@ -196,12 +196,6 @@ khởi tạo tài khoản Quản trị (Admin)
 <img width="1845" height="984" alt="image" src="https://github.com/user-attachments/assets/ae2a7735-f7db-4df4-b662-59bf84b36f05" />
 
 
-## **9. Cài công cụ quản lý Database bằng giao diện web qua đường link http://IP/phpmyadmin.**
-Cài đặt phpMyAdmin
-
-```
-sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
-```
 
 Khi nó hiện bảng hỏi chọn Web Server (apache2 hay lighttpd), anh không chọn cái nào cả (nhấn Tab rồi OK) vì chúng ta đang dùng Nginx.
 
