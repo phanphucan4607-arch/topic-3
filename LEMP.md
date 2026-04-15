@@ -159,10 +159,24 @@ Laravel:
 
 ```
 curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
 cd /var/www
+rm -rf laravel
 composer create-project laravel/laravel laravel
-chown -R www-data:www-data /var/www/laravel/storage /var/www/laravel/bootstrap/cache
+chown -R www-data:www-data /var/www/laravel
+chmod -R 775 /var/www/laravel/storage /var/www/laravel/bootstrap/cache
 ```
 
 <img width="918" height="626" alt="image" src="https://github.com/user-attachments/assets/e2c75d48-4bb4-4720-8802-b05a32473f5c" />
+
+
+## **9. Kiểm tra kết nối**
+ Kiểm tra Web & SSL (HTTPS)
+ truy cập 
+ https://wp.phucan.vietnix.tech
+ https://laravel.phucan.vietnix.tech
+
+<img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/63007637-8353-4bc3-bfec-9a963181c10a" 
+
+<img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/89878bc8-5f56-42b2-9ce8-693330e5cd9e" />
+
+
