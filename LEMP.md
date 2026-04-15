@@ -2,13 +2,13 @@
 Đầu tiên, hãy SSH vào VPS với thông tin được cung cấp: ssh root@221.132.21.141.
 
 
-**1. Cập nhật hệ thống**
+## **1. Cập nhật hệ thống**
 
 ```
 apt update && apt upgrade -y
 apt install -y curl wget vim zip unzip software-properties-common
 ```
-**2. Cài đặt Nginx (Web Server)**
+## **2. Cài đặt Nginx (Web Server)**
 
 
 ```
@@ -22,13 +22,13 @@ Kiểm tra: Truy cập IP http://221.132.21.141, nếu thấy trang chào mừng
 
    
 
-**3. Cài đặt MySQL và Cấu hình Remote**
+## **3. Cài đặt MySQL và Cấu hình Remote**
 
 ```
 apt install mysql-server -y
 ```
 
-**cấu hình remote root**
+#### **cấu hình remote root**
   ***Sửa file cấu hình cho phép kết nối từ bên ngoài****
   mở file: _nano /etc/mysql/mysql.conf.d/mysqld.cnf_
   tìm dòng: bind-address = 127.0.0.1 và sửa thành 0.0.0.0.
