@@ -174,9 +174,9 @@ chmod -R 775 /var/www/laravel/storage /var/www/laravel/bootstrap/cache
  truy cập 
  https://wp.phucan.vietnix.tech
  https://laravel.phucan.vietnix.tech
-
-<img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/63007637-8353-4bc3-bfec-9a963181c10a" 
-
+ 
 <img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/89878bc8-5f56-42b2-9ce8-693330e5cd9e" />
 
+
+<img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/b3eec1b6-26fb-4261-a6f8-6769bfa85e40" />
 
