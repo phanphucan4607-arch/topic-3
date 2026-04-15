@@ -186,14 +186,13 @@ chmod -R 775 /var/www/laravel/storage /var/www/laravel/bootstrap/cache
 <img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/89878bc8-5f56-42b2-9ce8-693330e5cd9e" />
 
 
-hởi tạo tài khoản Quản trị (Admin) 
+khởi tạo tài khoản Quản trị (Admin) 
 
 <img width="1174" height="912" alt="image" src="https://github.com/user-attachments/assets/be384c34-6e07-4292-bfca-3aa7b050d76e" />
 
-<img width="1845" height="984" alt="image" src="https://github.com/user-attachments/assets/e1580cb7-2dcc-412b-a703-4b5525f66fe8" />
-
 
 đây là Phòng điều khiển trung tâm của website.
+
 <img width="1845" height="984" alt="image" src="https://github.com/user-attachments/assets/ae2a7735-f7db-4df4-b662-59bf84b36f05" />
 
 
