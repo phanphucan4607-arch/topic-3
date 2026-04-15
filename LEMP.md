@@ -28,7 +28,7 @@ Kiểm tra: Truy cập IP http://221.132.21.141, nếu thấy trang chào mừng
 apt install mysql-server -y
 ```
 
-#### **cấu hình remote root**
+ **cấu hình remote root**
   ***Sửa file cấu hình cho phép kết nối từ bên ngoài****
   mở file: _nano /etc/mysql/mysql.conf.d/mysqld.cnf_
   tìm dòng: bind-address = 127.0.0.1 và sửa thành 0.0.0.0.
@@ -52,8 +52,16 @@ FLUSH PRIVILEGES;
 EXIT;
 
 ```
+## **4. Cài đặt phiên bản PHP 8.1**
 
- 
+```
+add-apt-repository ppa:ondrej/php -y
+apt update
+apt install php8.1-fpm php8.1-mysql php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-intl -y
+```
+
+<img width="924" height="252" alt="image" src="https://github.com/user-attachments/assets/02cddc60-4d48-48cc-ac75-a3609a3c5d8e" />
+
   
 
   
