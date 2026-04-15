@@ -45,9 +45,15 @@ systemctl restart mysq
 ```
 mysql
 # Trong môi trường mysql:
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '7b6MqeOapWFrEbZanjjA';
-CREATE USER 'root'@'%' IDENTIFIED BY '7b6MqeOapWFrEbZanjjA';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+mysql -u root -p
+# Nhập pass: 7b6MqeOapWFrEbZanjjA
+# QUYỀN 1: Cho phép chính Web Server (Localhost) kết nối
+CREATE USER IF NOT EXISTS 'root'@'127.0.0.1' IDENTIFIED BY '7b6MqeOapWFrEbZanjjA';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' WITH GRANT OPTION;
+# QUYỀN 2: Cho phép máy tính cá nhân của bạn quản trị từ xa (Giới hạn IP)
+CREATE USER IF NOT EXISTS 'root'@'115.78.5.187' IDENTIFIED BY '7b6MqeOapWFrEbZanjjA';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'115.78.5.187' WITH GRANT OPTION;
+
 FLUSH PRIVILEGES;
 EXIT;
 
@@ -178,6 +184,10 @@ chmod -R 775 /var/www/laravel/storage /var/www/laravel/bootstrap/cache
  https://laravel.phucan.vietnix.tech
  
 <img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/89878bc8-5f56-42b2-9ce8-693330e5cd9e" />
+
+
+<img width="1122" height="801" alt="image" src="https://github.com/user-attachments/assets/bdcbe6e8-9155-4239-b581-a0560dbcf63d" />
+
 
 
 <img width="1842" height="999" alt="image" src="https://github.com/user-attachments/assets/b3eec1b6-26fb-4261-a6f8-6769bfa85e40" />
