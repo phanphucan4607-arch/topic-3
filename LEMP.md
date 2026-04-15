@@ -197,6 +197,5 @@ khởi tạo tài khoản Quản trị (Admin)
 
 
 
-Khi nó hiện bảng hỏi chọn Web Server (apache2 hay lighttpd), anh không chọn cái nào cả (nhấn Tab rồi OK) vì chúng ta đang dùng Nginx.
 
 
