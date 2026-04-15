@@ -108,11 +108,35 @@ Nginx đã hoạt động. Bây giờ hệ thống đã hiểu đúng các cấu
 
 ```
 apt install certbot python3-certbot-nginx -y
-# Chạy lệnh sau và làm theo hướng dẫn để cài SSL tự động
+```
+
+# Chạy lệnh sau và làm theo hướng dẫn để cài SSL tự động và làm theo hình ảnh 
+
+```
 certbot --nginx -d wp.phucan.vietnix.tech
+```
+
+Chỗ này mình phải nhập email dùng để nhận thông báo khi chứng chỉ sắp hết hạn.
+<img width="919" height="184" alt="image" src="https://github.com/user-attachments/assets/2ccfc72c-fbb9-4ae4-be92-3fec08078632" />
+
+<img width="921" height="381" alt="image" src="https://github.com/user-attachments/assets/0b0000b6-f4fe-4e7e-920b-e2f68d35a48a" />
+
+Làm tương:
+
+```
 certbot --nginx -d laravel.phucan.vietnix.tech
 ```
 
+## **7. Cài đặt FTP (vsftpd) và Tạo tài khoản**
+
+```
+apt install vsftpd -y
+# Tạo user mới (ví dụ: ftpuser)
+adduser ftpuser
+# Nhập mật khẩu và thông tin
+usermod -d /var/www ftpuser
+chown -R ftpuser:ftpuser /var/www
+```
 
 
 
