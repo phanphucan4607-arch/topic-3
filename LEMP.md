@@ -40,6 +40,19 @@ systemctl restart mysq
 ```
 
   <img width="924" height="252" alt="image" src="https://github.com/user-attachments/assets/4c571ed9-6951-4db7-bfe9-b6a0ba57377b" />
+
+  **Cấp quyền cho user root**
+```
+mysql
+# Trong môi trường mysql:
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '7b6MqeOapWFrEbZanjjA';
+CREATE USER 'root'@'%' IDENTIFIED BY '7b6MqeOapWFrEbZanjjA';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+
+```
+
  
   
 
