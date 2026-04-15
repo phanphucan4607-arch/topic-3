@@ -154,6 +154,8 @@ cd /var/www/wp
 wget https://wordpress.org/latest.tar.gz
 tar -xvf latest.tar.gz --strip-components=1
 rm latest.tar.gz
+chown -R www-data:www-data /var/www/wp
+chmod -R 755 /var/www/wp
 ```
 Laravel:
 
