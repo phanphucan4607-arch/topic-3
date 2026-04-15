@@ -138,6 +138,31 @@ usermod -d /var/www ftpuser
 chown -R ftpuser:ftpuser /var/www
 ```
 
+Để cho phép upload, sửa file /etc/vsftpd.conf:
+    Bỏ dấu # trước write_enable=YES.
 
+<img width="919" height="184" alt="image" src="https://github.com/user-attachments/assets/b75ece5a-2b9b-4327-9ea9-40fbd9a521e4" />
+
+Khởi động lại: systemctl restart vsftpd.
+
+## **8. Cài đặt mã nguồn mặc định**
+WordPress:
+
+```
+mkdir -p /var/www/wp
+cd /var/www/wp
+wget https://wordpress.org/latest.tar.gz
+tar -xvf latest.tar.gz --strip-components=1
+rm latest.tar.gz
+```
+Laravel:
+
+```
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+cd /var/www
+composer create-project laravel/laravel laravel
+chown -R www-data:www-data /var/www/laravel/storage /var/www/laravel/bootstrap/cache
+```
 
 
