@@ -62,8 +62,58 @@ apt install php8.1-fpm php8.1-mysql php8.1-common php8.1-mysql php8.1-xml php8.1
 
 <img width="924" height="252" alt="image" src="https://github.com/user-attachments/assets/02cddc60-4d48-48cc-ac75-a3609a3c5d8e" />
 
-  
+## **5. Cấu hình Virtual Host cho WordPress và Laravel**
+Giả sử bạn có 2 domain: _wp.phucan.vietnix.tech_ và _laravel.phucan.vietnix.tech_
 
-  
+
+Cho WordPress:
+Tạo file: 
+
+```
+nano /etc/nginx/sites-available/wp.phucan.vietnix.tech
+```
+
+thêm nội dung sau vào 
+
+<img width="926" height="368" alt="image" src="https://github.com/user-attachments/assets/7f43e2b6-404d-4303-87a3-4d8e129e1feb" />
+
+Cho Laravel:
+
+Tạo file: 
+
+```
+nano /etc/nginx/sites-available/laravel.phucan.vietnix.tech
+```
+
+tiếp tục thêm nội dung sau vào 
+
+<img width="926" height="368" alt="image" src="https://github.com/user-attachments/assets/de7c9a2a-fd2b-45b1-9ca3-369caa8b65e4" />
+
+Kích hoạt:
+```
+ln -s /etc/nginx/sites-available/wp.phucan.vietnix.tech /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/laravel.phucan.vietnix.tech /etc/nginx/sites-enabled/
+```
+
+Kiểm tra:
+
+```
+nginx -t
+```
+<img width="723" height="108" alt="image" src="https://github.com/user-attachments/assets/b58e28f2-4294-4cc8-8e8e-01a6f538978f" />
+
+Nginx đã hoạt động. Bây giờ hệ thống đã hiểu đúng các cấu hình cho WordPress và Laravel.
+
+## **6. Cài đặt SSL bằng Certbot**
+
+```
+apt install certbot python3-certbot-nginx -y
+# Chạy lệnh sau và làm theo hướng dẫn để cài SSL tự động
+certbot --nginx -d wp.phucan.vietnix.tech
+certbot --nginx -d laravel.phucan.vietnix.tech
+```
+
+
+
 
 
