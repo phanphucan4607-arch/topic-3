@@ -165,4 +165,4 @@ composer create-project laravel/laravel laravel
 chown -R www-data:www-data /var/www/laravel/storage /var/www/laravel/bootstrap/cache
 ```
 
-
+<img width="918" height="626" alt="image" src="https://github.com/user-attachments/assets/e2c75d48-4bb4-4720-8802-b05a32473f5c" />
