@@ -19,6 +19,7 @@ systemctl enable nginx
 Kiểm tra: Truy cập IP http://221.132.21.141, nếu thấy trang chào mừng của Nginx là thành công.
 
 <img width="1841" height="754" alt="image" src="https://github.com/user-attachments/assets/fc2bda80-0673-4385-b825-bfabd4648d50" />
+_(Nguồn: tác giả)_
 
 **3. Cài đặt MySQL và Cấu hình Remote**
 
@@ -38,6 +39,8 @@ systemctl restart mysq
 ```
 
   <img width="924" height="252" alt="image" src="https://github.com/user-attachments/assets/4c571ed9-6951-4db7-bfe9-b6a0ba57377b" />
+  _(Nguồn: tác giả)_
+  
 
   
 
